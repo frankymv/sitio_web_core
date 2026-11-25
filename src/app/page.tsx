@@ -3,6 +3,16 @@ import Navbar from "@/components/Navbar";
 import ContactForm from "@/components/ContactForm";
 import {getContent,fallbackProjects,fallbackTestimonials,fallbackClients,fallbackFaq} from "@/lib/content";
 
+import { cacheLife } from 'next/cache';
+
+export async function CurrentYear() {
+  'use cache';
+  cacheLife('days'); // Guarda el valor en caché y lo revalida diariamente
+
+  return <>{new Date().getFullYear()}</>;
+}
+
+
 const services=[
  {icon:Code2,title:"Sistemas a medida",desc:"Creamos plataformas que se adaptan a tus procesos: ventas, inventario, gestión, reportes y automatización."},
  {icon:Globe2,title:"Diseño y desarrollo web",desc:"Sitios corporativos, portales y tiendas digitales rápidos, accesibles y optimizados para buscadores."},
@@ -126,7 +136,13 @@ return <>
                 <a href="#contacto">Contacto</a>
                 <a href="/admin/login">Administración</a>
             </div>
-            <p className="text-xs">© {new Date().getFullYear()} ChapinCORE. Todos los derechos reservados.</p>
+            
+                <p className="text-xs">
+                © <CurrentYear /> ChapinCORE. Todos los derechos reservados.
+                </p>
+
+
+          
         </div>
     </footer>
 </>;

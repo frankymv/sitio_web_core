@@ -3,6 +3,7 @@ import Navbar from "@/components/Navbar";
 import ContactForm from "@/components/ContactForm";
 import {getContent,fallbackProjects,fallbackTestimonials,fallbackClients,fallbackFaq} from "@/lib/content";
 
+
 const services=[
  {icon:Code2,title:"Sistemas a medida",desc:"Creamos plataformas que se adaptan a tus procesos: ventas, inventario, gestión, reportes y automatización."},
  {icon:Globe2,title:"Diseño y desarrollo web",desc:"Sitios corporativos, portales y tiendas digitales rápidos, accesibles y optimizados para buscadores."},

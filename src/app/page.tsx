@@ -140,9 +140,6 @@ return <>
                 <p className="text-xs">
                 © <CurrentYear /> ChapinCORE. Todos los derechos reservados.
                 </p>
-
-
-          
         </div>
     </footer>
 </>;

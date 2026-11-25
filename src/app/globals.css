@@ -1,0 +1,152 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: #080d18;
+  color: #f4f7fb;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button,
+input,
+textarea {
+  font: inherit;
+}
+
+.container {
+  width: min(1160px, calc(100% - 40px));
+  margin: auto;
+}
+
+.muted {
+  color: #9ba8bd;
+}
+
+.muted-white {
+  color: #080d18;
+}
+
+.gradient-text {
+  background: linear-gradient(90deg, #a5a0ff, #53d9ee);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.gradient-text-white {
+
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: oklch(28.3% 0.141 291.089);
+}
+
+
+.glass {
+  background: linear-gradient(145deg, rgba(24, 34, 54, 0.88), rgba(13, 20, 35, 0.88));
+  border: 1px solid rgba(148, 163, 184, 0.16);
+  backdrop-filter: blur(14px);
+}
+
+.grid-bg {
+    background: #0d1524;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 9px;
+  border-radius: 999px;
+  padding: 13px 20px;
+  font-weight: 700;
+  transition: 0.2s;
+}
+
+.btn-primary {
+  background: linear-gradient(100deg, #635bff, #18b9d4);
+  color: white;
+  box-shadow: 0 10px 35px rgba(99, 91, 255, 0.22);
+}
+
+.btn-primary-white {
+  background: oklch(28.3% 0.141 291.089);
+  color: white;
+  box-shadow: 0 10px 35px rgba(99, 91, 255, 0.22);
+}
+
+.btn-primary:hover {
+  transform: translateY(-2px);
+  filter: brightness(1.1);
+}
+
+.btn-outline {
+  border: 1px solid rgba(203, 213, 225, 0.25);
+  color: #e8edf7;
+}
+
+.section {
+  padding: 88px 0;
+}
+
+.eyebrow {
+  color: #6ee7f5;
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+  font-size: 11px;
+  font-weight: 800;
+}
+
+.section-title {
+  font-size: clamp(3rem, 5vw, 4.5rem);
+  line-height: 1.1;
+  letter-spacing: -0.04em;
+  margin: 12px 0;
+}
+
+.section-title-white {
+  font-size: clamp(3rem, 5vw, 4.5rem); /* Mínimo 40px, ideal 5% de pantalla, máximo 72px */
+  /*font-size: clamp(30px, 4vw, 46px);*/
+  line-height: 1.1;
+  letter-spacing: -0.04em;
+  margin: 12px 0;
+  color: oklch(0% 0 0);
+}
+
+.card {
+  border-radius: 22px;
+  padding: 25px;
+}
+
+.field {
+  width: 100%;
+  background: #0b1322;
+  border: 1px solid #2b3950;
+  border-radius: 12px;
+  padding: 13px 14px;
+  color: white;
+  outline: none;
+}
+
+.field:focus {
+  border-color: #7770ff;
+  box-shadow: 0 0 0 3px rgba(99, 91, 255, 0.14);
+}

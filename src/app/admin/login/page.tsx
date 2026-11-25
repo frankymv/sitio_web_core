@@ -1,0 +1,8 @@
+"use client";
+import {useState} from "react";
+import {supabase} from "@/lib/supabase";
+import {useRouter} from "next/navigation";
+export default function Login(){const [email,setEmail]=useState(""),[password,setPassword]=useState(""),[error,setError]=useState(""),[busy,setBusy]=useState(false);const router=useRouter();
+ async function go(e:React.FormEvent){e.preventDefault();setBusy(true);setError("");if(!supabase){setError("Configura las variables de Supabase antes de iniciar sesión.");setBusy(false);return;}const {error}=await supabase.auth.signInWithPassword({email,password});if(error)setError(error.message);else router.push("/admin");setBusy(false);}
+ return <main className="grid min-h-screen place-items-center px-5"><form onSubmit={go} className="glass w-full max-w-md rounded-3xl p-8"><a href="/" className="text-sm text-cyan-200">← Volver al sitio</a><p className="eyebrow mt-8">Panel privado</p><h1 className="mt-2 text-3xl font-black">Administración</h1><p className="muted mt-2 text-sm">Ingresa con tu usuario administrador.</p><label className="mt-7 block text-sm">Correo<input className="field mt-2" type="email" value={email} onChange={e=>setEmail(e.target.value)} required/></label><label className="mt-4 block text-sm">Contraseña<input className="field mt-2" type="password" value={password} onChange={e=>setPassword(e.target.value)} required/></label>{error&&<p className="mt-4 text-sm text-rose-300">{error}</p>}<button disabled={busy} className="btn btn-primary mt-6 w-full">{busy?"Ingresando...":"Iniciar sesión"}</button></form></main>
+}

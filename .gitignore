@@ -1,0 +1,14 @@
+# dependencias
+node_modules/
+
+# archivos de compilación de Next.js
+.next/
+out/
+
+# variables de entorno (contraseñas y claves privadas)
+.env
+.env*.local
+
+# archivos del sistema
+.DS_Store
+Thumbs.db

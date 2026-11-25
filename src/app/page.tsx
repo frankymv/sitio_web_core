@@ -37,7 +37,7 @@ return <>
                 Impulsamos tu negocio con <span className="gradient-text-white">soluciones digitales.</span>
             </h1>
             <p className="muted-white mt-7 max-w-xl text-lg leading-8 ">
-                Transformamos ideas y procesos en tecnología útil: consultoría, sistemas a medida, aplicaciones móviles, desarrollo web y ciberseguridad.
+                Transformamos ideas y procesos: consultoría, sistemas a medida, aplicaciones móviles, desarrollo web y ciberseguridad.
             </p>
             <div className="mt-9 flex flex-wrap gap-3">
                 <a href="#contacto" className="btn btn-primary-white">

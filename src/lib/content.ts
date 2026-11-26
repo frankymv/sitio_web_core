@@ -7,12 +7,12 @@ export async function getContent(table: string, fallback: any[] = []) {
 }
 
 export const fallbackProjects = [
- {id:"p1",title:"Sistema de gestión comercial",category:"Sistemas a medida",description:"Control de ventas, inventario, clientes y reportes desde una sola plataforma.",image_url:"",tags:["Laravel","Web","Dashboard"]},
- {id:"p2",title:"Aplicación móvil de servicios",category:"Aplicaciones móviles",description:"Una experiencia móvil intuitiva para conectar clientes y equipos de trabajo.",image_url:"",tags:["Flutter","Android","iOS"]},
- {id:"p3",title:"Portal institucional",category:"Diseño web",description:"Sitio corporativo moderno, rápido y optimizado para convertir visitas en oportunidades.",image_url:"",tags:["Next.js","SEO","Responsive"]},
- {id:"p4",title:"Sistema de  comercial",category:"Sistemas a medida",description:"Control de ventas, inventario, clientes y reportes desde una sola plataforma.",image_url:"",tags:["Laravel","Web","Dashboard"]},
- {id:"p5",title:"Aplicación móvil de ",category:"Aplicaciones móviles",description:"Una experiencia móvil intuitiva para conectar clientes y equipos de trabajo.",image_url:"",tags:["Flutter","Android","iOS"]},
- {id:"p6",title:"Portal ",category:"Diseño web",description:"Sitio corporativo moderno, rápido y optimizado para convertir visitas en oportunidades.",image_url:"",tags:["Next.js","SEO","Responsive"]}
+ {id:"p1",title:"Sistema de gestión comercial",category:"Sistemas a medida",description:"Control de ventas, inventario, clientes y reportes desde una sola plataforma.",image_url:"/images/imagen_inicio.jpg",tags:["Laravel","Web","Dashboard"]},
+ {id:"p2",title:"Aplicación móvil de servicios",category:"Aplicaciones móviles",description:"Una experiencia móvil intuitiva para conectar clientes y equipos de trabajo.",image_url:"/images/imagen_inicio.jpg",tags:["Flutter","Android","iOS"]},
+ {id:"p3",title:"Portal institucional",category:"Diseño web",description:"Sitio corporativo moderno, rápido y optimizado para convertir visitas en oportunidades.",image_url:"/images/imagen_inicio.jpg",tags:["Next.js","SEO","Responsive"]},
+ {id:"p4",title:"Sistema de  comercial",category:"Sistemas a medida",description:"Control de ventas, inventario, clientes y reportes desde una sola plataforma.",image_url:"/images/imagen_inicio.jpg",tags:["Laravel","Web","Dashboard"]},
+ {id:"p5",title:"Aplicación móvil de ",category:"Aplicaciones móviles",description:"Una experiencia móvil intuitiva para conectar clientes y equipos de trabajo.",image_url:"/images/imagen_inicio.jpg",tags:["Flutter","Android","iOS"]},
+ {id:"p6",title:"Portal ",category:"Diseño web",description:"Sitio corporativo moderno, rápido y optimizado para convertir visitas en oportunidades.",image_url:"/images/imagen_inicio.jpg",tags:["Next.js","SEO","Responsive"]}
 ];
 export const fallbackTestimonials = [
  {id:"t1",name:"Cliente empresarial",role:"Dirección general",company:"Empresa de servicios",quote:"Transformaron una necesidad operativa en una solución clara, práctica y fácil de utilizar."},
